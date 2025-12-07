@@ -1,0 +1,12 @@
+PyPDF2
+python-dotenv 
+openai 
+requests
+pinecone-client
+huggingface_hub
+langchain
+streamlit
+chainlit
+flask
+fastapi
+uvicorn
