@@ -122,13 +122,13 @@ def retrieve_chunks(query: str, top_k: int = 8):
         vector=query_vector,
         top_k=top_k,
         include_metadata=True,
-        filter=filter_dict # type: ignore
+        filter=filter_dict
     )
 
     contexts = []
     sources = []
 
-    for match in result.get("matches", []): # type: ignore
+    for match in result.get("matches", []):
         metadata = match.get("metadata", {}) or {}
         text = metadata.get("text", "").strip()
 
@@ -186,7 +186,7 @@ Sources: {source_text}
             temperature=0.1
         )
 
-        answer_text = response.choices[0].message.content.strip() # type: ignore
+        answer_text = response.choices[0].message.content.strip()
 
         if "do not contain a clear answer" in answer_text.lower():
             return (
@@ -231,7 +231,7 @@ Use simple educational language.
         temperature=0.3
     )
 
-    fallback_text = response.choices[0].message.content.strip() # type: ignore
+    fallback_text = response.choices[0].message.content.strip()
     confidence = random.randint(55, 70)
 
     return (

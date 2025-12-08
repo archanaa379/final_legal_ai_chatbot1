@@ -2,10 +2,10 @@ import os
 from langchain_community.document_loaders import PyPDFLoader
 
 #  Folder where all your PDF files are stored
-PDF_FOLDER = "archive/supreme_court_judgements/1950"   
+PDF_FOLDER = "data/"   
 
 # 📄 Output file path
-OUTPUT_FILE = "merged_output1.txt"
+OUTPUT_FILE = "merged_output.txt"
 
 def load_and_merge_pdfs(pdf_folder):
     all_text = ""
