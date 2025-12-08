@@ -1,12 +1,48 @@
-PyPDF2
-python-dotenv 
-openai 
-requests
-pinecone-client
-huggingface_hub
-langchain
-streamlit
-chainlit
-flask
-fastapi
-uvicorn
+# ---------- Core LangChain ----------
+langchain-core==0.3.12
+langchain-community==0.3.3
+langchain-text-splitters==0.3.0
+
+# ---------- Pinecone ----------
+pinecone-client==4.0.0
+pinecone-plugin-interface==0.0.7
+
+# ---------- PDF Loader ----------
+pypdf==4.2.0
+
+# ---------- Utilities ----------
+python-dotenv==1.0.1
+tqdm==4.66.4
+requests==2.32.3
+numpy==1.26.4
+
+# ---------- FastAPI ----------
+fastapi==0.110.1
+uvicorn==0.28.0
+
+# ---------- Streamlit ----------
+streamlit==1.32.2
+# ---------- Core LangChain ----------
+langchain-core==0.3.12
+langchain-community==0.3.3
+langchain-text-splitters==0.3.0
+
+# ---------- Pinecone ----------
+pinecone-client==4.0.0
+pinecone-plugin-interface==0.0.7
+
+# ---------- PDF Loader ----------
+pypdf==4.2.0
+
+# ---------- Utilities ----------
+python-dotenv==1.0.1
+tqdm==4.66.4
+requests==2.32.3
+numpy==1.26.4
+
+# ---------- FastAPI ----------
+fastapi==0.110.1
+uvicorn==0.28.0
+
+# ---------- Streamlit ----------
+streamlit==1.32.2

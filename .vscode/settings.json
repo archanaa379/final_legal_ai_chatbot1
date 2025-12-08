@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./milestone1",
+        "./milestone1/src"
+    ]
+}
