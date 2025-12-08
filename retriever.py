@@ -34,7 +34,7 @@ def retrieve(query: str, k: int = 4):
 
     # format results
     docs = []
-    for m in result.matches:
+    for m in result.matches: # type: ignore
         docs.append({
             "id": m.id,
             "score": m.score,
@@ -51,7 +51,7 @@ def retrieve(query: str, k: int = 4):
 # -----------------------------
 # 4. Test the retriever
 # -----------------------------
-if _name_ == "_main_":
+if __name__ == "__main__":
     query = "What is the Indian Contract Act?"
     results = retrieve(query)
 
