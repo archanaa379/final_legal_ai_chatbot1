@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 # -----------------------------
 # 1. Setup Pinecone
 # -----------------------------
-PINECONE_API_KEY = "pcsk_4vY34V_2CwxtYPNqp1qLh86TxQAQiqZD1Bt3HHLaTrVWYHEnC1RDw7Y8okvwfkGdYeAuGm"
+PINECONE_API_KEY = ""
 INDEX_NAME = "legal-index"
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
